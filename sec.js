@@ -28,4 +28,6 @@ const eightiesCompanies = companies.filter(
   company => company.start > 1979 && company.start < 1990
 );
 
-console.log(eightiesCompanies);
+//console.log(eightiesCompanies);
+
+//Get companies that lasted 10 years or more
