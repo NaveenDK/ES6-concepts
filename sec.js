@@ -10,10 +10,22 @@ const companies = [
   { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
 ];
 
-const retailCompanies = companies.filter(function(company) {
-  if (company.category === "Retail") {
-    return true;
-  }
-});
+// const retailCompanies = companies.filter(function(company) {
+//   if (company.category === "Retail") {
+//     return true;
+//   }
+// });
 
-console.log(retailCompanies);
+const retailCompanies = companies.filter(
+  company => company.category === "Retail"
+);
+
+//console.log(retailCompanies);
+
+//Filter  all the companies that started in the 80's
+
+const eightiesCompanies = companies.filter(
+  company => company.start > 1979 && company.start < 1990
+);
+
+console.log(eightiesCompanies);
