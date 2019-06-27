@@ -33,8 +33,9 @@ var ids = pilots.filter(pilot => {
 //find total years of experience with reduce
 // var years = pilots.reduce((agetotal, pilot) => agetotal + pilot.years, 0);
 
-var years = pilots.reduce((agetotal, pilot) => {
-  agetotal + pilot.years;
-}, 0);
+var years = pilots.reduce((agetotal, pilot) => agetotal + pilot.years, 0);
 //
 console.log(years);
+
+// Find the most experienced pilot
+//find age totals of all pilots and from there find the pilot with maximum age total
