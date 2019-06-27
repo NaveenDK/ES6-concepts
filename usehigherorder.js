@@ -14,3 +14,25 @@ const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
 // // test your code
 // const squaredIntegers = squareList(realNumberArray);
 // console.log(squaredIntegers);
+//Method o1
+
+//BEFORE TRYING TO ANSWER THIS QUESTION GOLOOK AT THIS
+
+// const average = euros.reduce((total, amount, index, array) => {
+//     total += amount
+//     return total/array.length
+//   }, 0);
+
+//Working Answer
+// let squaredIntegers = realNumberArray.reduce((arr, num) => {
+//   if (num % 2 == 0) arr.push(num * num);
+//   return arr;
+// }, []);
+
+//Similar but not working
+// let squaredIntegers = realNumberArray.reduce((arr, num) => {
+//   if (num % 2 == 0) return arr.push(num * num);
+//   //return arr;
+// }, []);
+//const squaredIntegers = squareList(realNumberArray);
+//console.log(squaredIntegers);
